@@ -12,6 +12,7 @@ class Profile: NSObject {
     var number = String()
     var image = String()
     var type = String()
+    var type2 = String()
 }
 
  
