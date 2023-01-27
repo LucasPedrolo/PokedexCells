@@ -7,12 +7,10 @@
 
 import UIKit
 
-class Profile: NSObject {
-    var name = String()
-    var number = String()
-    var image = String()
-    var type = String()
-    var type2 = String()
+struct Profile{
+    var name: String?
+    var number: String?
+    var image: String?
+    var type: String?
+    var type2: String?
 }
-
- 

@@ -8,11 +8,11 @@
 import UIKit
 
 class ProfileViewController: UIViewController {
-
-  
+    
+    @IBOutlet weak var collectionView: UICollectionView!
     private let cellId = "cellId"
     var profiles: [Profile]?
-    @IBOutlet weak var collectionView: UICollectionView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -25,189 +25,62 @@ class ProfileViewController: UIViewController {
     
     func pokemons(){
         
-        let pokemon1 = Profile()
-        pokemon1.name = "Bulbasaur"
-        pokemon1.type = "GP"
-        pokemon1.type2 = ""
-        pokemon1.number = "#001"
-        pokemon1.image = "001"
+        let pokemon1 = Profile(name: "Bulbasaur", number: "#001", image: "001", type: "GP", type2: "")
         
-        let pokemon2 = Profile()
-        pokemon2.name = "Ivysaur"
-        pokemon2.type = "GP"
-        pokemon2.type2 = ""
-        pokemon2.number = "#002"
-        pokemon2.image = "002"
+        let pokemon2 = Profile(name: "Ivysaur", number: "#002", image: "002", type: "GP", type2: "")
         
-        let pokemon3 = Profile()
-        pokemon3.name = "Venussaur"
-        pokemon3.number = "#003"
-        pokemon3.image = "003"
-        pokemon3.type = "GP"
-        pokemon3.type2 = ""
+        let pokemon3 = Profile(name: "Venussaur", number: "#003", image: "003", type: "GP", type2: "")
         
-        let pokemon4 = Profile()
-        pokemon4.name = "Charmander"
-        pokemon4.type = "F"
-        pokemon4.type2 = ""
-        pokemon4.number = "#004"
-        pokemon4.image = "004"
+        let pokemon4 = Profile(name: "Charmander", number: "#004", image: "004", type: "F", type2: "")
         
-        let pokemon5 = Profile()
-        pokemon5.name = "Charmeleon"
-        pokemon5.type = "F"
-        pokemon5.type2 = ""
-        pokemon5.number = "#005"
-        pokemon5.image = "005"
+        let pokemon5 = Profile(name: "Charmeleon", number: "#005", image: "005", type: "F", type2: "")
         
-        let pokemon6 = Profile()
-        pokemon6.name = "Charizard"
-        pokemon6.type = "FF"
-        pokemon6.type2 = ""
-        pokemon6.number = "#006"
-        pokemon6.image = "006"
+        let pokemon6 = Profile(name: "Charizard", number: "#006", image: "006", type: "FF", type2: "")
         
-        let pokemon7 = Profile()
-        pokemon7.name = "Squirtle"
-        pokemon7.type = "W"
-        pokemon7.type2 = ""
-        pokemon7.number = "#007"
-        pokemon7.image = "007"
+        let pokemon7 = Profile(name: "Squirtle", number: "#007", image: "007", type: "W", type2: "")
         
-        let pokemon8 = Profile()
-        pokemon8.name = "Wartortle"
-        pokemon8.type = "W"
-        pokemon8.type2 = ""
-        pokemon8.number = "#008"
-        pokemon8.image = "008"
+        let pokemon8 = Profile(name: "Wartortle", number: "#008", image: "008", type: "W", type2: "")
         
-        let pokemon9 = Profile()
-        pokemon9.name = "Blastoise"
-        pokemon9.type = "W"
-        pokemon9.type2 = ""
-        pokemon9.number = "#009"
-        pokemon9.image = "009"
+        let pokemon9 = Profile(name: "Blastoise", number: "#009", image: "009", type: "W", type2: "")
         
-        let pokemon10 = Profile()
-        pokemon10.name = "Caterpie"
-        pokemon10.type = "B"
-        pokemon10.type2 = ""
-        pokemon10.number = "#010"
-        pokemon10.image = "010"
+        let pokemon10 = Profile(name: "Caterpie", number: "#010", image: "010", type: "B", type2: "")
         
-        let pokemon11 = Profile()
-        pokemon11.name = "Metapod"
-        pokemon11.type = "B"
-        pokemon11.type2 = ""
-        pokemon11.number = "#011"
-        pokemon11.image = "011"
+        let pokemon11 = Profile(name: "Metapod", number: "#011", image: "011", type: "B", type2: "")
         
-        let pokemon12 = Profile()
-        pokemon12.name = "Butterfree"
-        pokemon12.type = "BFly"
-        pokemon12.type2 = ""
-        pokemon12.number = "#012"
-        pokemon12.image = "012"
+        let pokemon12 = Profile(name: "Butterfree", number: "#012", image: "012", type: "BFly", type2: "")
         
-        let pokemon13 = Profile()
-        pokemon13.name = "Weedle"
-        pokemon13.type = "BP"
-        pokemon13.type2 = ""
-        pokemon13.number = "#013"
-        pokemon13.image = "013"
+        let pokemon13 = Profile(name: "Weedle", number: "#013", image: "013", type: "BP", type2: "")
         
-        let pokemon14 = Profile()
-        pokemon14.name = "Kakuna"
-        pokemon14.type = "B"
-        pokemon14.type2 = ""
-        pokemon14.number = "#014"
-        pokemon14.image = "014"
+        let pokemon14 = Profile(name: "Kakuna", number: "#014", image: "014", type: "B", type2: "")
         
-        let pokemon15 = Profile()
-        pokemon15.name = "Beedrill"
-        pokemon15.type = "BP"
-        pokemon15.type2 = ""
-        pokemon15.number = "#015"
-        pokemon15.image = "015"
+        let pokemon15 = Profile(name: "Beedrill", number: "#015", image: "015", type: "BP", type2: "")
         
-        let pokemon16 = Profile()
-        pokemon16.name = "Pidgey"
-        pokemon16.type = "NFly"
-        pokemon16.type2 = ""
-        pokemon16.number = "#016"
-        pokemon16.image = "016"
+        let pokemon16 = Profile(name: "Pidgey", number: "#016", image: "016", type: "NFly", type2: "")
         
-        let pokemon17 = Profile()
-        pokemon17.name = "Pidgeotto"
-        pokemon17.type = "NFly"
-        pokemon17.type2 = ""
-        pokemon17.number = "#017"
-        pokemon17.image = "017"
+        let pokemon17 = Profile(name: "Pidgeotto", number: "#017", image: "017", type: "NFly", type2: "")
         
-        let pokemon18 = Profile()
-        pokemon18.name = "Pidgeot"
-        pokemon18.type = "NFly"
-        pokemon18.type2 = ""
-        pokemon18.number = "#018"
-        pokemon18.image = "018"
+        let pokemon18 = Profile(name: "Pidgeot", number: "#018", image: "018", type: "NFly", type2: "")
         
-        let pokemon19 = Profile()
-        pokemon19.name = "Rattata"
-        pokemon19.type = "N"
-        pokemon19.type2 = ""
-        pokemon19.number = "#019"
-        pokemon19.image = "019"
+        let pokemon19 = Profile(name: "Rattata", number: "#019", image: "019", type: "N", type2: "")
         
-        let pokemon20 = Profile()
-        pokemon20.name = "Raticate"
-        pokemon20.type = "N"
-        pokemon20.type2 = ""
-        pokemon20.number = "#020"
-        pokemon20.image = "020"
+        let pokemon20 = Profile(name: "Raticate", number: "#020", image: "020", type: "N", type2: "")
         
-        let pokemon21 = Profile()
-        pokemon21.name = "Spearow"
-        pokemon21.type = "NFly"
-        pokemon21.type2 = ""
-        pokemon21.number = "#021"
-        pokemon21.image = "021"
+        let pokemon21 = Profile(name: "Spearow", number: "#021", image: "021", type: "NFly", type2: "")
         
-        let pokemon22 = Profile()
-        pokemon22.name = "Fearow"
-        pokemon22.type = "NFly"
-        pokemon22.type2 = ""
-        pokemon22.number = "#022"
-        pokemon22.image = "022"
+        let pokemon22 = Profile(name: "Fearow", number: "#022", image: "022", type: "NFly", type2: "")
         
-        let pokemon23 = Profile()
-        pokemon23.name = "Ekans"
-        pokemon23.type = "P"
-        pokemon23.type2 = ""
-        pokemon23.number = "#023"
-        pokemon23.image = "023"
+        let pokemon23 = Profile(name: "Ivysaur", number: "#023", image: "023", type: "P", type2: "")
         
-        let pokemon24 = Profile()
-        pokemon24.name = "Arbok"
-        pokemon24.type = "P"
-        pokemon24.type2 = ""
-        pokemon24.number = "#024"
-        pokemon24.image = "024"
+        let pokemon24 = Profile(name: "Arbok", number: "#024", image: "024", type: "P", type2: "")
         
-        let pokemon25 = Profile()
-        pokemon25.name = "Pikachu"
-        pokemon25.type = "E"
-        pokemon25.type2 = ""
-        pokemon25.number = "#025"
-        pokemon25.image = "025"
+        let pokemon25 = Profile(name: "Pikachu", number: "#025", image: "025", type: "E", type2: "")
         
         profiles = [pokemon1, pokemon2, pokemon3, pokemon4, pokemon5, pokemon6, pokemon7, pokemon8, pokemon9, pokemon10, pokemon11, pokemon12, pokemon13, pokemon14, pokemon15, pokemon16, pokemon17, pokemon18, pokemon19, pokemon20, pokemon21, pokemon22, pokemon23, pokemon24, pokemon25]
     }
-    
 }
 
-
 extension ProfileViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
-   
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         if let count = profiles?.count {
             return count
@@ -222,13 +95,10 @@ extension ProfileViewController: UICollectionViewDelegate, UICollectionViewDataS
         if let items = profiles?[indexPath.item] {
             cell.profile = items
         }
-        
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: collectionView.frame.width, height: 80)
     }
-    
 }
-
